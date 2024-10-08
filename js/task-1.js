@@ -1,12 +1,12 @@
 'use strict'
 
 function isEnoughCapacity(products, containerSize) {
-    const arrayProducts = Object.values(products);
-    let result = 0;
-    for (const a of arrayProducts) {
-        result += a;
-    };
-    return (result < containerSize);
+  const arrayProducts = Object.values(products);
+  let result = 0;
+  for (const a of arrayProducts) {
+    result += a;
+  };
+  return (result <= containerSize);
 }
 
 
